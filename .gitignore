@@ -1,0 +1,63 @@
+# Compilación general
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorios de compilación
+/bin/
+/build/
+/out/
+/target/
+
+# Eclipse
+*.pydevproject
+.project
+.classpath
+.cproject
+.settings/
+.loadpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Maven
+/logs/
+target/
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Otros
+*.swp
+*~
+
+# Archivos de entorno
+.env
