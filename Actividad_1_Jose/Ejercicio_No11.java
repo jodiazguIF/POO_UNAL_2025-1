@@ -1,4 +1,4 @@
-package Actividad_1;
+package Actividad_1_Jose;
 import java.util.Scanner; // Se importa la clase Scanner para leer la entrada del usuario
 
 public class Ejercicio_No11{

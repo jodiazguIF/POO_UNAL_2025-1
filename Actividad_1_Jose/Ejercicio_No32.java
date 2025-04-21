@@ -1,4 +1,4 @@
-package Actividad_1;
+package Actividad_1_Jose;
 import java.util.Scanner;
 
 public class Ejercicio_No32 {

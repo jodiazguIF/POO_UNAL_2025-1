@@ -1,4 +1,4 @@
-package Actividad_1; // Se declara el paquete Actividad_1 al inicio del archivo para que coincida con el paquete esperado.
+package Actividad_1_Jose; // Se declara el paquete Actividad_1 al inicio del archivo para que coincida con el paquete esperado.
 import java.util.Scanner; // Se importa la clase Scanner para leer la entrada del usuario
 
 public class Ejercicio_No10 {

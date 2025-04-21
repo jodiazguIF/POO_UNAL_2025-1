@@ -1,4 +1,4 @@
-package Actividad_1;
+package Actividad_1_Jose;
 
 //1. Se definen los paquetes
 // Se debe declarar el paquete Actividad_1 al inicio del archivo para que coincida con el paquete esperado.

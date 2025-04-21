@@ -1,4 +1,4 @@
-package Actividad_1;    //Se define el paquete para que coincida con el paquete esperado
+package Actividad_1_Jose;    //Se define el paquete para que coincida con el paquete esperado
 /* En este programa se da uso del condicional if ingresando 4 variables y realizando operaciones lógicas entre ellas*/
  import java.util.Scanner; // Se importa la clase Scanner para leer la entrada del usuario
 
