@@ -3,7 +3,7 @@ package com.mycompany.ejercicio_3;
 public class Automovil {
     String Marca;
     int Modelo;
-    String Motor;
+    int Motor;
     int NumeroDePuertas;
     int CantidadDeAsientos;
     int VelocidadMaxima;
@@ -18,7 +18,7 @@ public class Automovil {
         EJECUTIVO, SUV};
     TipoA TipoAutomovil;
 
-    public Automovil(String Marca, int Modelo, String Motor, int NumeroDePuertas, int CantidadDeAsientos, int VelocidadMaxima, int VelocidadActual, TipoCo TipoCombustible, TipoC Color, TipoA TipoAutomovil) {
+    public Automovil(String Marca, int Modelo, int Motor, int NumeroDePuertas, int CantidadDeAsientos, int VelocidadMaxima, int VelocidadActual, TipoCo TipoCombustible, TipoC Color, TipoA TipoAutomovil) {
         this.Marca = Marca;
         this.Modelo = Modelo;
         this.Motor = Motor;
@@ -39,7 +39,7 @@ public class Automovil {
         this.Modelo = Modelo;
     }
 
-    public void setMotor(String Motor) {
+    public void setMotor(int Motor) {
         this.Motor = Motor;
     }
 
