@@ -21,7 +21,5 @@ public class Ejercicio_3 {
         auto1.Frenar();
         System.out.println("Velocidad actual = " + auto1.VelocidadActual);
         auto1.Desacelerar(20);
-    }
-}
-    }
-}
+    }}
+
