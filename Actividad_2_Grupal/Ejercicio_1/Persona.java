@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Actividad_2_Grupal.Ejercicio_1;
 
 public class Persona {
 

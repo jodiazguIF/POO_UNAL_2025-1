@@ -1,12 +1,12 @@
-package Ejercicio4;
+package Actividad_2_Grupal.Ejercicio_4;
 
-public class TriánguloRectángulo {
+public class TrianguloRectangulo{
 	
 
     private int base;
     private int altura;
 
-    public TriánguloRectángulo(int base, int altura) {
+    public TrianguloRectangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }

@@ -1,6 +1,6 @@
-package com.mycompany.ejercicio_3;
+package Actividad_2_Grupal.Ejercicio_3;
 
-public class Automovil {
+public class Automovil{
     String Marca;
     int Modelo;
     int Motor;

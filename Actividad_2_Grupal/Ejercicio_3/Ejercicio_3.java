@@ -1,9 +1,9 @@
 package Actividad_2_Grupal.Ejercicio_3;
 
 
-import com.mycompany.ejercicio_3.Automovil.TipoA;
-import com.mycompany.ejercicio_3.Automovil.TipoC;
-import com.mycompany.ejercicio_3.Automovil.TipoCo;
+import Actividad_2_Grupal.Ejercicio_3.Automovil.TipoA;
+import Actividad_2_Grupal.Ejercicio_3.Automovil.TipoC;
+import Actividad_2_Grupal.Ejercicio_3.Automovil.TipoCo;
 
 
 public class Ejercicio_3 {

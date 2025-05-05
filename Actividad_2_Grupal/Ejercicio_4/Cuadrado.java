@@ -1,4 +1,4 @@
-package Ejercicio4;
+package Actividad_2_Grupal.Ejercicio_4;
 
 public class Cuadrado {
     
