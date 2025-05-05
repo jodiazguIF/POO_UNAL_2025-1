@@ -4,14 +4,13 @@ public class cuenta_Bancaria {
     String nombre_Titular = null; //Atributo que define el nombre del titular de la cuenta
     String apellidos_Titular = null; //Atributo que define los apellidos del titular de la cuenta
     String numero_Cuenta = null; //Atributo que define el número de cuenta
-    enum tipo_Cuenta {AHORRO, CORRIENTE} //Atributo que define el tipo de cuenta como un valor enumerado
+    enum tipo_Cuenta {AHORROS, CORRIENTE} //Atributo que define el tipo de cuenta como un valor enumerado
     tipo_Cuenta tipo_dCuenta; //Atributo que define el tipo de cuenta
     float saldo_Cuenta = 0; //Atributo que define el saldo de la cuenta bancaria
     float porcentaje_Interes = 0.13f; //Atributo que define el porcentaje de interés de la cuenta bancaria
 
     /*Constructor */
-    public cuenta_Bancaria(String nombre_Titular, String apellidos_Titular, String numero_Cuenta,
-                tipo_Cuenta tipo_dCuenta) {
+    public cuenta_Bancaria(String nombre_Titular, String apellidos_Titular, String numero_Cuenta,tipo_Cuenta tipo_dCuenta) {
             this.nombre_Titular = nombre_Titular;
             this.apellidos_Titular = apellidos_Titular;
             this.numero_Cuenta = numero_Cuenta;
@@ -56,7 +55,7 @@ public class cuenta_Bancaria {
         System.out.println("El saldo tras aplicar el interés es: $" + saldo_Cuenta);
     }
     public static void main(String args[]) {
-        cuenta_Bancaria cuenta = new cuenta_Bancaria("Pedro","Pérez", "123456789", tipo_Cuenta.AHORRO);
+        cuenta_Bancaria cuenta = new cuenta_Bancaria("Pedro","Pérez", "123456789", tipo_Cuenta.AHORROS);
         cuenta.imprimir();
         cuenta.consignar(200000);
         cuenta.consignar(300000);

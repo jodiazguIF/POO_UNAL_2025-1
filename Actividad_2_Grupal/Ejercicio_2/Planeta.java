@@ -23,8 +23,8 @@ public class Planeta{
     tipoPlaneta tipo;
     // Atributo que define si el planeta es observable o no
     boolean esObservable = false;
-    float periodo_Orbital = 0; //En años
-    float periodo_Rotacion = 0; //En horas
+    float periodo_Orbital; //En años
+    float periodo_Rotacion; //En horas
 
     /*Constructor */
     public Planeta(String nombre, int cantidadSatelites, double masa, double
