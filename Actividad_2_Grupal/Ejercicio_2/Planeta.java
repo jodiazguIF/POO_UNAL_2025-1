@@ -24,7 +24,7 @@ public class Planeta{
     // Atributo que define si el planeta es observable o no
     boolean esObservable = false;
     float periodo_Orbital = 0; //En años
-    float periodo_Rotacion = 0; //EN días
+    float periodo_Rotacion = 0; //En horas
 
     /*Constructor */
     public Planeta(String nombre, int cantidadSatelites, double masa, double
@@ -46,14 +46,14 @@ public class Planeta{
     public void imprimir() {
         System.out.println("Nombre del planeta: " + nombre);
         System.out.println("Cantidad de satelites: " + cantidadSatelites);
-        System.out.println("Masa del planeta: " + masa);
-        System.out.println("Volumen del planeta: " + volumen);
-        System.out.println("Diámetro del planeta: " + diámetro);
-        System.out.println("Distancia al sol: " + distanciaSol);
+        System.out.println("Masa del planeta: " + masa + " kg");
+        System.out.println("Volumen del planeta: " + volumen + " m³");
+        System.out.println("Diámetro del planeta: " + diámetro + " km");
+        System.out.println("Distancia al sol: " + distanciaSol + " km");
         System.out.println("Tipo de planeta: " + tipo);
         System.out.println("Es observable: " + esObservable);
-        System.out.println("Periodo orbital: " + periodo_Orbital);
-        System.out.println("Periodo de rotación: " + periodo_Rotacion);
+        System.out.println("Periodo orbital: " + periodo_Orbital + " años");
+        System.out.println("Periodo de rotación: " + periodo_Rotacion + " horas");
     }
 
     //Método que calcula y devuelve la densidad del planeta
@@ -77,12 +77,12 @@ public class Planeta{
     public static void main(String[] args) {
         Planeta p1 = new Planeta("Tierra", 1, 5.9736E24, 1.0832E12, 12742, 150000000, tipoPlaneta.TERRESTRE, true, 1f, 24f );
         p1.imprimir();
-        System.out.println("Densidad del planeta = " + p1.calcularDensidad());
+        System.out.println("Densidad del planeta = " + p1.calcularDensidad() + " kg/m³");
         System.out.println("Es planeta exterior = " + p1.esPlanetaExterior());
         System.out.println();
         Planeta p2 = new Planeta("Júpiter", 79, 1.899E27, 1.4313E15,139820,750000000,tipoPlaneta.GASEOSO, true, 11.86f , 10f );
         p2.imprimir();
-        System.out.println("Densidad del planeta = " + p2.calcularDensidad());
+        System.out.println("Densidad del planeta = " + p2.calcularDensidad() + " kg/m³");
         System.out.println("Es planeta exterior = " + p2.esPlanetaExterior());
     }
 }
