@@ -9,7 +9,6 @@ import Actividad_2_Grupal.Ejercicio_3.Automovil.TipoCo;
 public class Ejercicio_3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
         Automovil auto1 = new Automovil("Ford",2020,3,4,8,200,160,TipoCo.GASOLINA,TipoC.NEGRO,TipoA.CIUDAD);
         auto1.imprimir();
         auto1.setVelocidadActual(100);
