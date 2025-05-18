@@ -7,29 +7,29 @@ package Ejercicio_4_2.Inmuebles;
  */
 
 public class Inmueble {
-    protected int inmueble_identificadorInmobiliario;
-    protected int inmueble_Area;
-    protected String inmueble_Direccion; 
-    protected double inmueble_PrecioVenta;
+    protected int identificadorInmobiliario;
+    protected int area;
+    protected String direccion; 
+    protected double precioVenta;
 
     // Constructor
-    public Inmueble(int inmueble_identificadorInmobiliario, int inmueble_Area, String inmueble_Direccion) {
-        this.inmueble_identificadorInmobiliario = inmueble_identificadorInmobiliario;
-        this.inmueble_Area = inmueble_Area;
-        this.inmueble_Direccion = inmueble_Direccion;
+    public Inmueble(int identificadorInmobiliario, int area, String direccion) {
+        this.identificadorInmobiliario = identificadorInmobiliario;
+        this.area = area;
+        this.direccion = direccion;
     }
 
     //Método para calcular el valor del inmueble
     public double calcularValorInmueble(double valorArea) {
-        inmueble_PrecioVenta = inmueble_Area * valorArea;
-        return inmueble_PrecioVenta;
+        precioVenta = area * valorArea;
+        return precioVenta;
     }
 
     //Método para imprimir
     void imprimir(){
-        System.out.println("Identificador inmobiliario: " + inmueble_identificadorInmobiliario);
-        System.out.println("Área: " + inmueble_Area);
-        System.out.println("Dirección: " + inmueble_Direccion);
-        System.out.println("Precio de venta: $" + inmueble_PrecioVenta);
+        System.out.println("Identificador inmobiliario: " + identificadorInmobiliario);
+        System.out.println("Área: " + area);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Precio de venta: $" + precioVenta);
     }
 }

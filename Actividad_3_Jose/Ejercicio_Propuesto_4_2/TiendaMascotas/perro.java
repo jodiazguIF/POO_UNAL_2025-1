@@ -2,7 +2,7 @@ package Ejercicio_Propuesto_4_2.TiendaMascotas;
 
 public class perro extends Mascota {
     enum tamano {
-        PEQUEÑO, 
+        PEQUENO, 
         MEDIANO,
         GRANDE
     }
