@@ -2,12 +2,12 @@ package Actividad_2_Grupal.Ejercicio_1;
 
 public class Persona {
 
-    private String nombre;
-    private String apellido;
-    private String documentoIdentidad;
-    private int yearNacimiento;
-    private String paisNacimiento; 
-    private char genero;            
+    private final String nombre;
+    private final String apellido;
+    private final String documentoIdentidad;
+    private final int yearNacimiento;
+    private final String paisNacimiento; 
+    private final char genero;            
 
    
     public Persona(String nombre, String apellidos, String identidad, int yearNacimiento, String paisNacimiento, char genero) {

@@ -9,6 +9,7 @@ public class apartaestudio extends apartamento{
     }
 
     //Mostrar datos
+    @Override
     void imprimir() {
         super.imprimir();
     }   

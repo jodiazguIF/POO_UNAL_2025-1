@@ -1,4 +1,4 @@
-package ejercicio1;
+package Actividad_4_Grupal_Ejercicio1;
 
 public class Main {
 

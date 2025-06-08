@@ -18,7 +18,7 @@ public class Planeta{
     // Atributo que define la distancia al sol de un planeta
     int distanciaSol = 0;
     // Atributo que define el tipo de planeta como un valor enumerado
-    enum tipoPlaneta {GASEOSO, TERRESTRE, ENANO}
+    public enum tipoPlaneta {GASEOSO, TERRESTRE, ENANO}
     // Atributo que define el tipo de planeta
     tipoPlaneta tipo;
     // Atributo que define si el planeta es observable o no
@@ -64,11 +64,7 @@ public class Planeta{
     //Método que calcula y devuelve si un planeta es exterior o no
     boolean esPlanetaExterior() {
         float limite = (float) (149597870 * 3.4);
-        if (distanciaSol > limite) {
-            return true;
-        } else {
-            return false;
-        }
+        return distanciaSol > limite;
     }
     /**
     * Método main que crea dos planetas, imprime sus datos en pantalla,

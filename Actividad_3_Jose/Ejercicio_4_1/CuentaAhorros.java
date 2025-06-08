@@ -4,13 +4,11 @@ public class CuentaAhorros extends CuentaBancaria{
     private boolean activa;
     public CuentaAhorros(float saldo, float tasa){
         super(saldo, tasa); //Se usa super para invocar el constructor de la clase padre
-        if(saldo < 10000){
-            activa = false; //La cuenta no está activa si el saldo es menor a 10,000
-        }else{
-            activa = true; //La cuenta está activa si el saldo es mayor o igual a 10,000
-        }
+        activa = saldo >= 10000; //La cuenta no está activa si el saldo es menor a 10,000
+        //La cuenta está activa si el saldo es mayor o igual a 10,000
     }
 
+    @Override
     public void retirar(float cantidad){
         if(activa){
             super.retirar(cantidad);    // Se llama al método retirar de la clase padre
@@ -19,6 +17,7 @@ public class CuentaAhorros extends CuentaBancaria{
         }
     }
 
+    @Override
     public void extractoMensual(){
         if (numeroRetiros>4){
             comisionMensual += (numeroRetiros-4) * 1000;

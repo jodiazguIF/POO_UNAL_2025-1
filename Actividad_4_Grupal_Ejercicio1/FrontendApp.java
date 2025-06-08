@@ -1,10 +1,10 @@
-package ejercicio1;
+package Actividad_4_Grupal_Ejercicio1;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class FrontendApp extends JFrame implements ActionListener {
+public final class FrontendApp extends JFrame implements ActionListener {
 
 
     public Nota [] datos_notas = new Nota[5];
@@ -177,63 +177,47 @@ public class FrontendApp extends JFrame implements ActionListener {
     }
 
 
-    @Override
-    public void actionPerformed(ActionEvent evento) {
 
-        if (evento.getSource() == calcular) {
+ @Override
+public void actionPerformed(ActionEvent evento) {
 
-            FrontendApp notas_daticos = new FrontendApp();
+    if (evento.getSource() == calcular) {
+        try {
+            datos_notas[0].setValor(Double.parseDouble(campoNota1.getText()));
+            datos_notas[1].setValor(Double.parseDouble(campoNota2.getText()));
+            datos_notas[2].setValor(Double.parseDouble(campoNota3.getText()));
+            datos_notas[3].setValor(Double.parseDouble(campoNota4.getText()));
+            datos_notas[4].setValor(Double.parseDouble(campoNota5.getText()));
 
+            promedio.setText("Promedio = " + String.format("%.2f",
+                    Nota.calcular_promedio(datos_notas)));
 
-            notas_daticos.getDatos_notas()[0] = new Nota(Double.parseDouble(campoNota1.getText()));
-            notas_daticos.getDatos_notas()[1] = new Nota(Double.parseDouble(campoNota2.getText()));
-            notas_daticos.getDatos_notas()[2] = new Nota(Double.parseDouble(campoNota3.getText()));
-            notas_daticos.getDatos_notas()[3] = new Nota(Double.parseDouble(campoNota4.getText()));
-            notas_daticos.getDatos_notas()[4] = new Nota(Double.parseDouble(campoNota5.getText()));
+            double desviacion_calculada = Nota.calcularDesviación(datos_notas);
+            desviacion.setText("Desviación estándar = " + String.format("%.2f", desviacion_calculada));
 
-
-
-
-            promedio.setText("Promedio = " + String.valueOf(String.
-                    format("%.2f",
-                            Nota.calcular_promedio(notas_daticos.getDatos_notas())  )));
-
-
-
-
-            double desviacion_calculada = Nota.calcularDesviación(notas_daticos.getDatos_notas());
-
-            desviacion.setText("Desviación estándar = " + String.
-                    format("%.2f", desviacion_calculada));
-
-
-
-            mayor.setText("Nota Mayor = " + String.valueOf(
-                    Nota.obtener_mayor_nota(notas_daticos.getDatos_notas())
-                    ));
-
-
-            menor.setText("Valor menor = " + String.valueOf(
-
-                    Nota.obtener_menor_nota(notas_daticos.getDatos_notas())
-                    ));
-
+            mayor.setText("Nota Mayor = " + String.format("%.2f", Nota.obtener_mayor_nota(datos_notas)));
+            menor.setText("Valor menor = " + String.format("%.2f", Nota.obtener_menor_nota(datos_notas)));
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Por favor ingresa solo números válidos en todas las notas.",
+                    "Error de entrada", JOptionPane.ERROR_MESSAGE);
         }
-
-
-        if (evento.getSource() == limpiar) {
-            campoNota1.setText("");
-            campoNota2.setText("");
-            campoNota3.setText("");
-            campoNota4.setText("");
-
-
-            campoNota5.setText("");
-            promedio.setText("");
-            desviacion.setText("");
-            mayor.setText("");
-            menor.setText("");
-        }
-
     }
+
+    if (evento.getSource() == limpiar) {
+        campoNota1.setText("");
+        campoNota2.setText("");
+        campoNota3.setText("");
+        campoNota4.setText("");
+        campoNota5.setText("");
+        promedio.setText("Promedio = ");
+        desviacion.setText("Desviación = ");
+        mayor.setText("Nota mayor = ");
+        menor.setText("Nota menor = ");
+
+        for (Nota nota : datos_notas) {
+            nota.setValor(0);
+        }
+    }
+}
+
 }

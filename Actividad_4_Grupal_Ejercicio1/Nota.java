@@ -1,4 +1,4 @@
-package ejercicio1;
+package Actividad_4_Grupal_Ejercicio1;
 
 public class Nota {
 
@@ -13,8 +13,8 @@ public class Nota {
         double suma = 0;
 
 
-        for(int i= 0; i < notas.length; i++) {
-            suma += notas[i].getValor();
+        for (Nota nota : notas) {
+            suma += nota.getValor();
         }
 
         return (suma / notas.length);
@@ -26,9 +26,8 @@ public class Nota {
         double promedio = Nota.calcular_promedio(notas);
         double suma = 0;
 
-        for(int i=0; i < notas.length; i++) {
-
-            suma += Math.pow(notas[i].getValor() - promedio, 2 );
+        for (Nota nota : notas) {
+            suma += Math.pow(nota.getValor() - promedio, 2);
         }
         return Math.sqrt(suma/notas.length );
 
@@ -40,10 +39,9 @@ public class Nota {
 
         double resultado = notas[0].getValor();
 
-        for(int i=0; i < notas.length; i++) {
-            if (notas[i].getValor() < resultado) {
-
-                resultado = notas[i].getValor();
+        for (Nota nota : notas) {
+            if (nota.getValor() < resultado) {
+                resultado = nota.getValor();
             }
         }
         return resultado;
@@ -56,10 +54,9 @@ public class Nota {
 
         double resultado = notas[0].getValor();
 
-        for(int i=0; i < notas.length; i++) {
-            if (notas[i].getValor() > resultado) {
-
-                resultado = notas[i].getValor();
+        for (Nota nota : notas) {
+            if (nota.getValor() > resultado) {
+                resultado = nota.getValor();
             }
         }
         return resultado;
