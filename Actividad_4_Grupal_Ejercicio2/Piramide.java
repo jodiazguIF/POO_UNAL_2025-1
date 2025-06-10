@@ -1,4 +1,4 @@
-package Actividad_4_Grupal_Ejercicio2;
+package com.mycompany.figuras;
 
 public final class Piramide extends Figuras {
     private final double base; //Atributo que identifica la base de la pirámide
