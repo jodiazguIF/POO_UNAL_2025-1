@@ -1,4 +1,4 @@
-package Actividad_4_Grupal_Ejercicio2;
+package com.mycompany.figuras;
 
 public final class Esfera extends Figuras {
     private final double radio; //Atributo que identifica el radio de la esfera
