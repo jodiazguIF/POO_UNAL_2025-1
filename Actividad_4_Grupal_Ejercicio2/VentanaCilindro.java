@@ -1,10 +1,11 @@
-package com.mycompany.figuras;
+package Actividad_4_Grupal_Ejercicio2;
 import javax.swing.JOptionPane;
 public class VentanaCilindro extends javax.swing.JFrame {
 
   
     public VentanaCilindro() {
         initComponents();
+    }
                         
     private void initComponents() {
 
@@ -24,29 +25,17 @@ public class VentanaCilindro extends javax.swing.JFrame {
 
         altura.setText("Altura:");
 
-        campoRadio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoRadioActionPerformed(evt);
-            }
-        });
+        campoRadio.addActionListener(this::campoRadioActionPerformed);
 
         calcular.setText("Calcular");
-        calcular.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                calcularActionPerformed(evt);
-            }
-        });
+        calcular.addActionListener(this::calcularActionPerformed);
 
         volumen.setText("hola");
 
         superficie.setText("hola");
 
         atras.setText("Atras");
-        atras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
-            }
-        });
+        atras.addActionListener(this::atrasActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -99,12 +88,12 @@ public class VentanaCilindro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void calcularActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void calcularActionPerformed(@SuppressWarnings("unused") java.awt.event.ActionEvent evt) {                                         
 // Se inicializan el radio y la altura del cilindro
         boolean error = false; /* Se inicializa variable para determinar si
         ocurre un error */
-        double radioValor = 0;
-        double alturaValor = 0;
+        double radioValor;
+        double alturaValor;
         try {
             // Se obtiene el radio del cilindro ingresado
             radioValor = Double.parseDouble(campoRadio.getText());
@@ -121,17 +110,16 @@ public class VentanaCilindro extends javax.swing.JFrame {
             error = true; // Si ocurre una excepción
         } finally {
             if(error) { /* Si ocurre una excepción, se muestra un mensaje de error */
-                JOptionPane.showMessageDialog(null,"Campo nulo o error en formato de numero"," Error", JOptionPane.ERROR_MESSAGE);}}        // TODO add your handling code here:
+                JOptionPane.showMessageDialog(null,"Campo nulo o error en formato de numero"," Error", JOptionPane.ERROR_MESSAGE);}}    
     }                                        
 
-    private void campoRadioActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+    private void campoRadioActionPerformed(@SuppressWarnings("unused") java.awt.event.ActionEvent evt) {                                           
     }                                          
 
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {                                      
-        VentanaPrincipal atras = new VentanaPrincipal();
-        atras.setVisible(true);
-        atras.setResizable(false);        // TODO add your handling code here:
+    private void atrasActionPerformed(@SuppressWarnings("unused") java.awt.event.ActionEvent evt) {                                      
+        VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+        ventanaPrincipal.setVisible(true);
+        ventanaPrincipal.setResizable(false);       
     }                                     
 
 

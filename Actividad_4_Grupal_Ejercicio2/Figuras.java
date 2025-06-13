@@ -1,4 +1,4 @@
-package com.mycompany.figuras;
+package Actividad_4_Grupal_Ejercicio2;
 
 public class Figuras {
     private double volumen; //Atributo que identifica el volumen de la figura geométrica

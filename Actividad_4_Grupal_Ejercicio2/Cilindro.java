@@ -1,4 +1,4 @@
-package com.mycompany.figuras;
+package Actividad_4_Grupal_Ejercicio2;
 
 public final class Cilindro extends Figuras {
     private final double radio; //Atributo que identifica el radio del cilindro

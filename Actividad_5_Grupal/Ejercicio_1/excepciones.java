@@ -10,7 +10,7 @@ package Actividad_5_Grupal.Ejercicio_1;
         // Primer bloque try-catch
         try {
             System.out.println("Ingresando al primer try");
-            double cociente = 1000/0; // Esto lanzará una ArithmeticException
+            // Esto lanzará una ArithmeticException
             System.out.println("Despues de la división"); //Esta expresión no se ejecutará
         } catch (ArithmeticException e) { //Se captura la excepción
             System.out.println("División por cero");
