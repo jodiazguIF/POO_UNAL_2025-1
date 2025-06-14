@@ -21,7 +21,7 @@ package Actividad_5_Grupal.Ejercicio_1;
         // Segundo bloque try-catch
         try {
         System.out.println("Ingresando al segundo try");
-            Object objeto = null;
+            Object objeto = null; // Se crea un objeto nulo
             objeto.toString(); // Se lanza una excepción
             /* 
             *Esta instrucción nunca será ejecutada porque se lanzó una
