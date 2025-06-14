@@ -87,10 +87,10 @@ public final class FrontEnd_Excepciones extends JFrame implements ActionListener
         contenedor.add(txtObjeto);
     }
 
-    /* ---------- Lógica de botones ---------- */
     @Override
+    @SuppressWarnings("StringConcatenationInsideStringBufferAppend")
     public void actionPerformed(ActionEvent e) {
-        /* --- Botón “Dividir” --- */
+        //Boton Dividir
         if (e.getSource() == btnDividir) {
             StringBuilder sb = new StringBuilder("<html>");
             try {
@@ -112,7 +112,7 @@ public final class FrontEnd_Excepciones extends JFrame implements ActionListener
             lblResultado.setText(sb.toString());
         }
 
-        /* --- Botón “Ejecutar” segundo try‑catch --- */
+        // Botón Añadir Objeto
         if (e.getSource() == btnEjecutarSegundo) {
             StringBuilder sb = new StringBuilder("<html>");
             try {
