@@ -5,7 +5,7 @@ package Actividad_5_Grupal.Ejercicio_1;
  * pantalla ayuda a identificar la porción de código que se ejecutó o no
  */
 
- public class excepciones {
+ public class Excepciones {
     public static void main(String[] args) {
         // Primer bloque try-catch
         try {
