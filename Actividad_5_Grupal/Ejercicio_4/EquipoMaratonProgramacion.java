@@ -1,4 +1,4 @@
-package ejercicio4;
+package Ejercicio_4;
 import java.util.*;
 import java.util.regex.Pattern;
 public class EquipoMaratonProgramacion {
